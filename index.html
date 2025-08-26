@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payoo Mobile app</title>
+
+    <!-- Tailwind css  cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- DaisyUI cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="shortcut icon" href="assets/payoo.png" type="image/x-icon">
+  </head>
+  <body class="bg-[#f4f5f7] h-[100vh] max-w-[450px] mx-auto flex flex-col justify-center items-center gap-10 p-0 mb-10">
+
+    <div class="image-container flex flex-col" >
+      <img class=" relative bottom-[-220px]  w-[315px] " src="assets/bg.png" alt="">
+      <img class="  relative h-[70px] w-[75px] left-[120px]" src="assets/Group.png" alt="">
+    </div>
+
+
+    <form class="w-[400px] bg-white p-[25px] rounded-[20px] shadow-lg" action="">
+        <div class="flex flex-col  gap-2 mb-10">
+            <label for="">Mobile Number</label>
+            <input class="bg-[#f4f5f7] p-[10px] rounded-[20px]" type="text" placeholder="Enter your Mobile Number">
+        </div>
+        <div class="flex flex-col  gap-2 mb-10">
+            <label for="">4 Digit Pin</label>
+            <input class="bg-[#f4f5f7] p-[10px] rounded-[20px] border-b" type="password" placeholder="Enter your Password">
+        </div>
+
+        <button class="bg-[#0874F2] w-full rounded-[20px] text-white p-[10px]">login</button>
+    </form>     
+ 
+    
+
+  </body>
+</html>
