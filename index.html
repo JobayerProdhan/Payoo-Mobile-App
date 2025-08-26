@@ -6,7 +6,7 @@
     <title>Payoo Mobile app</title>
 
     <!-- Tailwind css  cdn  -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+   
 
     <!-- DaisyUI cdn -->
     <link
@@ -21,29 +21,32 @@
   <body class="bg-[#f4f5f7] h-full  ">
 
     <div class="flex flex-col items-center justify-center mx-auto gap-5 pb-[100px]">
-           <div class="image-container flex flex-col" >
+           <div class="image-container flex flex-col relative z-0 " >
       <img class=" relative bottom-[-220px]  w-[315px] " src="assets/bg.png" alt="">
       <img class="  relative h-[70px] w-[75px] left-[120px]" src="assets/Group.png" alt="">
     </div>
 
 
-    <form class="w-[350px] bg-white p-[25px] rounded-[20px] shadow-lg" action="">
+    <form class="relative z-10 w-[350px] bg-white p-[25px] rounded-[20px] shadow-lg" action="">
         <div class="flex flex-col  gap-2 mb-10">
             <label for="">Mobile Number</label>
-            <input class="bg-[#f4f5f7] p-[10px] rounded-[20px]" type="text" placeholder="Enter your Mobile Number">
+          <input type="text" class="bg-[#f4f5f7] p-[10px] rounded-[20px] border-b" id="mobileNumber" placeholder="Enter your Mobile Number">
+
         </div>
         <div class="flex flex-col  gap-2 mb-10">
             <label for="">4 Digit Pin</label>
-            <input class="bg-[#f4f5f7] p-[10px] rounded-[20px] border-b" type="password" placeholder="Enter your Password">
+            <input id="pinNumber" class="bg-[#f4f5f7] p-[10px] rounded-[20px] border-b" type="password" placeholder="Enter your Password">
         </div>
 
-        <button class="bg-[#0874F2] w-full rounded-[20px] text-white p-[10px]">login</button>
+        <button id="loginBtn" class="bg-[#0874F2] w-full rounded-[20px] text-white p-[10px]">login</button>
+        <div id="error-message" class="text-red-600 text-[14px]"></div>
     </form>
     </div>
 
         
  
     
-
+   <script src="./scripts/logIn.js"></script>
+   <script src="./scripts/logout.js"></script>
   </body>
 </html>
